@@ -31,7 +31,8 @@ app.use("/api", orderRoutes);
 app.use("/api", userRoutes);
 
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen(process.env.PORT || 3000, () => console.log(`Example app listening at http://localhost:${port}`))
+
 
 
 //http://localhost:3100/api/category/create                         ....to create category
